@@ -12,7 +12,7 @@ const cookieParser =require('cookie-parser');
 const credentials = require('./middleware/credentials');
 const path=require('path');
 const mongoose = require('mongoose');
-const connectDB =require('./config/dbConn')
+const connectDB =require('./Config/dbConn')
 const PORT = process.env.PORT || 3500 ;
 
 
