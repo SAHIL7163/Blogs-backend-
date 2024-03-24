@@ -79,17 +79,17 @@ app.use(errorhandler);
 //app.use('/employees',require('./router/api/employees'));  
 
 
-/*  mongoose.connection.once('open',{useNewUrlParser:true,useUnifiedTopology: true }, () => {
+ mongoose.connection.once('open',{useNewUrlParser:true,useUnifiedTopology: true }, () => {
     console.log('Connected to MongoDB');
     app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-});  */
-mongoose.connect(PORT, { useNewUrlParser: true})
+}); 
+/* mongoose.connect(PORT, { useNewUrlParser: true})
     .then(() => {
         console.log('Connected to MongoDB');
         app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
     })
     .catch((error) => {
         console.error('Error connecting to MongoDB:', error);
-    });
+    }); */
  
  //app.listen(PORT,()=>console.log(`Server running on port ${PORT}`));  
